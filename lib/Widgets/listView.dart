@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'bookInfo.dart';
 
-class listview extends StatelessWidget {
-  listview({Key? key}) : super(key: key);
+class list_view extends StatelessWidget {
+  list_view({Key? key}) : super(key: key);
   final List<FeaturedBooks> featuredBooks = FeaturedBooks.books;
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class listview extends StatelessWidget {
         itemCount: featuredBooks.length,
         itemBuilder: (context,index)
         {
-          return bookInfo(featuredBooks[index]);
+          return bookInfo(featuredBooks[index], context);
         }
     );
   }

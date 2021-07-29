@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:abc/Widgets/bottomNavigation.dart';
-import 'package:abc/Widgets/categories.dart';
-import 'Widgets/listView.dart';
-import 'package:abc/Widgets/slider.dart';
-import 'package:abc/Widgets/searchBar.dart';
+
+import '../Widgets/slider.dart';
+import '../Widgets/searchBar.dart';
+import '../Widgets/bottomNavigation.dart';
+import '../Widgets/categories.dart';
+import '../Widgets/listView.dart';
+import './routes.dart';
 
 
 void main() {
@@ -68,13 +70,16 @@ class _MyAppState extends State<MyApp> {
                 ),
                Container(
                  height: 300,
-                   child: listview()),
+                   child: GestureDetector(child: list_view())),
             ],
             ),
           ),
           bottomNavigationBar: bottomnavigation(),
+
         ),
       ),
+      initialRoute: '/',
+      routes: routes,
     );
   }
 }

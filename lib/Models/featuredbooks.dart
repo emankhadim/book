@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 
 class FeaturedBooks {
   final int id;
@@ -11,7 +11,7 @@ class FeaturedBooks {
     FeaturedBooks(
         id: 1,
         name: 'The Forty Rules of love',
-        descripton: 'The book tells the story of Ella Rubinstein',
+        descripton: 'The Forty Rules of Love is a 2009 novel by Elif Shafak. The book tells the story of Ella Rubinstein, a woman in her late thirties who has settled into the complacency of her life. She exists without drive or passion. The narrative follows her unlikely escape from what at first appears to be inevitable unhappiness.',
         image: 'assets/images/book.jpeg',
     ),
     FeaturedBooks(

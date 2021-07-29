@@ -7,7 +7,7 @@ Widget cartbutton(){
     child: TextButton(
       style: TextButton.styleFrom(
         backgroundColor: Colors.yellow,
-        padding: EdgeInsets.symmetric(horizontal: 14.0),
+        padding: EdgeInsets.symmetric(horizontal: 10.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(topLeft: Radius.zero, topRight: Radius.circular(12), bottomLeft: Radius.circular(12), bottomRight: Radius.circular(12)),
         ),

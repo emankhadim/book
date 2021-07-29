@@ -2,18 +2,29 @@ import 'package:flutter/material.dart';
 
 Widget search()
 {
-  return Padding(
-  padding: const EdgeInsets.only(left: 15.0, right: 20.0),
-  child: TextField(
-  decoration: InputDecoration(
-  border: OutlineInputBorder(
-  borderRadius: BorderRadius.circular(80.0),
-  ),
-  filled: true,
-  hintStyle: TextStyle(color: Colors.grey[800]),
-  hintText: "Search for books",
-  fillColor: Colors.white70),
-
-  ),
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+    margin: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+    decoration: BoxDecoration(
+      color: Color(0xFFF8EA88),
+      borderRadius: BorderRadius.circular(40),
+    ),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Icon(Icons.search),
+        Flexible(
+          child: TextField(
+            cursorColor: Colors.black,
+            decoration: InputDecoration(
+              border: InputBorder.none,
+              contentPadding: EdgeInsets.all(5),
+              hintText: 'Search',
+            ),
+          ),
+        ),
+        Spacer(),
+      ],
+    ),
   );
 }
